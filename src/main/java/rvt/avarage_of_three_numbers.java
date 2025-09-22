@@ -12,7 +12,7 @@ public class avarage_of_three_numbers{
         int thirdnum = Integer.valueOf(scanner.nextLine());
         double avrager = (firstnm + secnum + thirdnum) / 3.0;
         System.out.println("The avarage is " + avrager);
-
+scanner.close();
 
     }
       

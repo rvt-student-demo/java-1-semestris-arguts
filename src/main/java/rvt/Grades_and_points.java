@@ -25,7 +25,7 @@ public class Grades_and_points{
             System.out.println("5");
         }
         
-
+        scanner.close();
 
     }
 }

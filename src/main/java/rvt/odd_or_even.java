@@ -13,7 +13,7 @@ public class odd_or_even {
             System.out.println("Number " + numberuno + " Is odd");
         }
 
-
+scanner.close();
 
     }
 

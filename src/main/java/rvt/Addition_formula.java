@@ -11,7 +11,7 @@ public class Addition_formula {
         int secondsk = Integer.valueOf(sumer.nextLine());
         int sum = firstsk + secondsk;
         System.out.println(firstsk + "+" + secondsk +"="+sum);
-        
+        sumer.close();
     }
    
 }
