@@ -8,7 +8,7 @@ public class numbersum {
         int suma = 0;
         int skskaits = 0;
         while (true) {
-            System.out.println("Given a number: ");
+            System.out.println("Give a number: ");
             int numba = Integer.valueOf(scanner.nextLine());
             if (numba == 0) {
                 break;
