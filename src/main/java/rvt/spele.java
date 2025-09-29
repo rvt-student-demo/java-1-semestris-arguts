@@ -8,7 +8,7 @@ public class spele {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int victor = 0;
+        Boolean victor = false;
         int result = random.nextInt(1, 11);
         System.out.println("Es domaju par skaitli no 1 lidz 10\nTev tas jauzmin tris meginajumos.\nIevadi minejumu:");
 
@@ -19,12 +19,12 @@ public class spele {
             } else {
                 System.out.println("PAREIZI!");
                 System.out.println("Tu esi uzvarejis speli.");
-                victor++;
+                victor = true;
                 break;
             }
 
         }
-        if (victor == 0) {
+        if (!victor) {
             System.out.println("Tu esi zaudejis speli.");
         }
 
