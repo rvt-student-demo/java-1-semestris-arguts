@@ -49,11 +49,19 @@ public class chapter19 {
         for (int i = 1; i < n + 1; i++) {
             LoopSum += i * i;
         }
-   
 
         System.out.println("Loop Sum = " + LoopSum);
         System.out.println("Formula Sum = " + FunctionSum);
-       
+
     }
 
+    public static void ex4(Scanner scanner) {
+        System.out.println("Enter low");
+        int low = Integer.valueOf(scanner.nextLine());
+        System.out.println("Enter high");
+        int high = Integer.valueOf(scanner.nextLine());
+    }
+    for(int i = low; i < high ; i++){
+
+    }
 }
