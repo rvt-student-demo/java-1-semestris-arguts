@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class chapter19 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ex2(scanner);
+        ex3(scanner);
 
     }
 
@@ -40,4 +40,20 @@ public class chapter19 {
         System.out.println("Loop Sum = " + LoopSum);
         System.out.println("Formula Sum = " + FunctionSum);
     }
+
+    public static void ex3(Scanner scanner) {
+        System.out.println("Enter N:");
+        int n = Integer.valueOf(scanner.nextLine());
+        double FunctionSum = ((n * (n + 1) * (2 * n + 1)) / 6);
+        double LoopSum = 0;
+        for (int i = 1; i < n + 1; i++) {
+            LoopSum += i * i;
+        }
+   
+
+        System.out.println("Loop Sum = " + LoopSum);
+        System.out.println("Formula Sum = " + FunctionSum);
+       
+    }
+
 }
