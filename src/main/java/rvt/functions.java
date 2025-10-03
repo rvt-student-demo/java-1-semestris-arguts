@@ -7,16 +7,13 @@ public class functions {
         dividing_checker(scanner.nextInt() , scanner.nextInt());
     }
     public static void dividing_checker(int start, int end){
-        for(int i = start; i < end; i++){
+        for(int i = start; i < end + 1; i++){
 
             if(i % 3 == 0){
-                System.out.println(i + " Dalaas ar 3");
+                System.out.println(i);
                 continue;
             }
-            if (i == 0) {
-                System.out.println("\u001B[2A\u001B[1J");
-                System.out.flush();
-            }
+
         }
     }
 
