@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class chapter19 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ex3(scanner);
+        ex4(scanner);
 
     }
 
@@ -60,8 +60,16 @@ public class chapter19 {
         int low = Integer.valueOf(scanner.nextLine());
         System.out.println("Enter high");
         int high = Integer.valueOf(scanner.nextLine());
-    }
-    for(int i = low; i < high ; i++){
+        int low_rez = ((low*(low-1))/2);
+        int high_rez = ((high*(high+1))/2);
+
+        int rez = high_rez - low_rez;
+
+        System.out.println(rez);
+    //     for(int i = low; i < high ; i++){
+
+    // }
 
     }
+
 }
