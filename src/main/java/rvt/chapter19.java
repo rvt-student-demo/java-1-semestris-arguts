@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class chapter19 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ex4(scanner);
+        ex5(scanner);
 
     }
 
@@ -70,6 +70,15 @@ public class chapter19 {
 
     // }
 
+    }
+    public static void ex5(Scanner scanner){
+        System.out.println("Enter a word:");
+        String word = scanner.nextLine();
+         System.out.println(" ");
+        int times = word.length();
+        for(int i = times; i > 0; i--){
+            System.out.println(word);
+        }
     }
 
 }
