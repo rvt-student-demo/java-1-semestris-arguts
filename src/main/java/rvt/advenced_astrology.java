@@ -6,7 +6,7 @@ public class advenced_astrology {
     public static void main(String[] args) {
         halfTriangle(4);
         System.out.println();
-        xmansTree(10);
+        xmansTree(6);
     }
 
     public static void printSpaces(int number) {
@@ -35,7 +35,7 @@ public class advenced_astrology {
             System.out.println();
         }
         for(int i = 0; i < 2; i++){
-            printSpaces(((TreeSize * 2) - 1) / 2);
+            printSpaces(((1 + (TreeSize  - 1) * 2) / 2) - 1);
             printStars(3);
             System.out.println();
         }
