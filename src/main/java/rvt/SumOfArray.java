@@ -6,13 +6,13 @@ public class SumOfArray {
         
         sumOfNumbersInArray(numbers);
     }
-    public static int sumOfNumbersInArray(int[] array){
+    public static void sumOfNumbersInArray(int[] array){
         int suma = 0;
         for(int i = 0; i < array.length; i ++){
            suma += array[i];
         }
         System.out.println(suma);
-        return suma;
+        
     }
     
 }
