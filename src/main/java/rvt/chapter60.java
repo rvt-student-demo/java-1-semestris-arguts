@@ -2,7 +2,7 @@ package rvt;
 
 public class chapter60 {
     public static void main(String[] args) {
-        ex2(args);
+        ex5(args);
     }
 
     public static void ex1(String[] args) {
@@ -31,5 +31,20 @@ public class chapter60 {
             System.out.println(twice[i] * 2);
         }
         
+    }
+    public static void ex5(String[] args) {
+   int[] val = {12, 9, 2, 95, 29}; 
+    int temp;
+ 
+    System.out.println( "Original Array: " + val[0] + " " + val[1] + " " + val[2] + " " + val[3] + " " + val[4] );
+ 
+    // reverse the order of the numbers in the array
+    for(int i = 0; i < val.length / 2; i++){
+        temp = val[i];
+        val[i] = val[val.length - 1 - i];
+        val[val.length -1 - i] = temp;
+    }
+
+    System.out.println( "Reversed Array: " + val[0] + " " + val[1] + " " + val[2] + " " + val[3] + " " + val[4] );
     }
 }
