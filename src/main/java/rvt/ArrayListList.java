@@ -58,11 +58,19 @@ public class ArrayListList {
         LastCheck.add("Second");
         LastCheck.add("Third");
 
-        System.out.println(LastCheck);
 
-        LastCheck.removeLast();
-        LastCheck.removeLast();
+
         
         System.out.println(LastCheck);
+        RemoveLastMethod(LastCheck);
+        RemoveLastMethod(LastCheck);
+        System.out.println(LastCheck);
+        
+
     }
+    public static void RemoveLastMethod(List<?> list) {
+            if (!list.isEmpty()) {
+            list.remove(list.size() - 1);
+        }
+        }
 }
