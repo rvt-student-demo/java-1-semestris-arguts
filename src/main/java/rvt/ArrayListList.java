@@ -8,7 +8,7 @@ import java.util.List;
 public class ArrayListList {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        RemoveLast(args);
+        OnTheList(scanner);
     }
     public static void OnlyTheseNumbs(Scanner scanner){
         List<Integer> listy = new ArrayList<>();
@@ -30,19 +30,25 @@ public class ArrayListList {
     }
     public static void ListSize(Scanner scanner) {
         List<String> ListSize = new ArrayList<>();
-        for(int i = 0; i < 10; i ++){
-            String user = scanner.nextLine(); 
+        while(true){
+            String user = scanner.nextLine();
+            if(user == ""){
+                break;
+            }
             ListSize.add(user);
-        
-        }   
+        }
         System.out.println(ListSize.size());
     }
     public static void OnTheList(Scanner scanner) {
         List<String> CheckerList = new ArrayList<>();
-        for(int i = 0; i < 4; i++ )  {
-            String lietotajs = scanner.nextLine(); 
+        while(true){
+            String lietotajs = scanner.nextLine();
+            if(lietotajs == ""){
+                break;
+            }
             CheckerList.add(lietotajs);
-        }
+        }        
+
         System.out.print("Search for? ");
         String name = scanner.nextLine();
         if(CheckerList.contains(name)){
