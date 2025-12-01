@@ -14,11 +14,11 @@ public class main_program {
         System.out.println("Average: " + statistics.average());
         System.out.println("Enter numbers: ");
         while(true){
-            statistics.addNumber(Integer.valueOf(scanner.nextLine()));
-            if( == -1){
+            int input = Integer.valueOf(scanner.nextLine());
+            if(input == -1){
                 break;
             }
-
+            statistics.addNumber(input);
         }
     }
 }
